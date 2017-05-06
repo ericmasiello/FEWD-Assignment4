@@ -1,0 +1,28 @@
+/******************************************/
+/* Tablet Media Query */
+/*******************************************/
+
+
+@media(min-width: 768px){
+/* TABLET PORTRAIT */
+
+	#topNav {
+  		padding-right: 50px;
+	}
+	#logo {
+		padding-left: 20px;
+	}
+
+
+
+}
+
+@media(min-width: 1024px){
+/* TABLET LANDSCAPE */
+
+
+
+
+
+
+}
