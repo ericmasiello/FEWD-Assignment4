@@ -1,3 +1,7 @@
+/* figure out header */
+/* how do I center the logo? */
+/*  */
+
 /*
 Project Name: Blank Template
 Client: Your Client
@@ -20,6 +24,359 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #f0efef;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #606161;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  color: #033048;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+blockquote {
+  font-size: 26x;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 580px;
+  margin: 0 auto;
+}
+
+blockquote span {
+  font-weight: 600;
+  display: block;
+  font-style: normal;
+}
+
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  
+  /* Center the container */
+  
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  
+  /******************************************
+  /* BUTTONS
+  /*******************************************/
+  
+  .button {
+    border-radius: 5px;
+    font-weight: 800;
+    padding: 12px 0;
+    min-width: 200px;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .primary {
+    background: #f9e42e;
+    color: #033048;
+  }
+  
+  .secondary {
+    background: #033048;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  /******************************************
+  /* HEADER
+  /*******************************************/
+  
+  .logo {
+    font-size: 38px;
+    font-weight: 800;
+  }
+  
+  header {
+    background: #033048;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  header .container {
+    /* display: flex; */
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  
+  header .logo {
+    color: #fff;
+  }
+  
+  /******************************************
+  /* NAV
+  /*******************************************/
+  
+  nav ul {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    justify-content: space-around;
+    padding-left: 20px;
+    max-width: 768px;
+  }
+
+  /* need to fix the buttons from going off the page */
+  /* center logo */
+
+  
+  nav li {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 24px;
+  }
+  
+  nav li:first-child {
+    margin-left: 20px;
+  }
+  
+  nav a {
+    color: #f9e42e;
+  }
+  
+  /******************************************
+  /* HERO
+  /*******************************************/
+  
+  .hero {
+    min-height: 500px;
+    background: url(../images/header_bg.jpg) no-repeat top center #131e27;
+    background-size: cover;
+    padding-top: 32px;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 38px;
+    color: #fff;
+    margin: 120px 20px 90px;
+    font-weight: 600;
+  }
+  
+  /******************************************
+  /* BENEFITS
+  /*******************************************/
+  
+  .benefits {
+    padding: 50px 15px 40px;
+    text-align: center;
+  }
+  
+  .benefits p,
+  .benefits ul {
+    max-width: 768px;
+  }
+  
+  .benefits ul {
+    text-align: left;
+    list-style: circle;
+    margin: 0px 0 0 0;
+  }
+  /* normalize the bullet points */
+
+  
+  /******************************************
+  /* TESTIMONIAL
+  /*******************************************/
+  
+  .testimonial {
+    background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
+    background-size: cover;
+    padding: 70px 0 70px;
+    color: #fff; 
+  }
+
+  blockquote {
+    max-width: 768px;
+    display: inline;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    /* how do we get an inline element */
+  }
+  
+  /******************************************
+  /* MAIN
+  /*******************************************/
+  
+  section {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .main {
+    margin-top: 20px;
+  }
+  
+  .main .container {
+    /* display: flex; */
+  }
+  
+  .posts {
+    max-width: 768px;
+    margin: 20px;
+    vertical-align: top;
+  }
+  
+  .sidebar {
+    width: auto;
+    margin: 20px;
+    vertical-align: top;
+  }
+
+  aside {
+    text-align: center;
+  }
+  
+  .post {
+    border-bottom: 1px solid #043049;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .post h2 {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+  }
+  
+  .post h2 a {
+    color: #043049;
+  }
+  
+  .post img {
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .post p {
+    font-size: 16px;
+    line-height: 1.333;
+    color: #606161;
+  }
+  
+  .post p:first-of-type:first-letter {
+    float: left;
+    font-size: 38px;
+    line-height: 32px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    font-weight: 600;
+  }
+  
+  .readmore {
+    text-align: right;
+    margin-top: 30px;
+  }
+  
+  .readmore a {
+    color: #043049;
+    font-weight: 600;
+  }
+  
+  .sidebar h3 {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #043049;
+  }
+  
+  .sidebar ul {
+    margin-bottom: 40px;
+  }
+  
+  .sidebar ul li a {
+    color: #043049;
+    font-size: 16px;
+  }
+  
+  .sidebar p {
+    font-size: 16px;
+    line-height: 1.1;
+    margin-bottom: 40px;
+  }
+  
+  .sidebar p a {
+    color: #043049;
+    font-weight: 600;
+  }
+
+  .sidebar img {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  /******************************************
+  /* BOTTOM CTA
+  /*******************************************/
+  
+  .bottom-cta {
+    background: #f9e42e;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /******************************************
+  /* FOOTER
+  /*******************************************/
+  
+  footer {
+    background: #121212;
+    padding: 35px 0 22.5px;
+    text-align: center;
+  }
+  
+  footer .logo {
+    color: #f9e42e;
+    margin-bottom: 68px;
+  }
+  
+  footer p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .social {
+    margin: 0;
+    margin-bottom: 75px;
+    padding: 0;
+    display: inline-flex;
+    list-style-type: none;
+  }
+  
+  .social > li {
+    margin-left: 26px;
+    margin-right: 26px;
+  }
+  
+/* ************************************************************************************** */
+@media (min-width: 768px){
 
 /******************************************
 /* BASE STYLES
@@ -169,6 +526,7 @@ nav a {
 
 .benefits {
   padding: 100px 0 80px;
+  text-align: left;
 }
 
 .benefits p,
@@ -202,6 +560,10 @@ nav a {
 
 .main .container {
   display: flex;
+}
+
+aside {
+  text-align: left;
 }
 
 .posts {
@@ -271,6 +633,7 @@ nav a {
 
 .sidebar ul {
   margin-bottom: 40px;
+  list-style-type: none;
 }
 
 .sidebar ul li a {
@@ -332,3 +695,9 @@ footer p {
   margin-left: 26px;
   margin-right: 26px;
 }
+
+}
+
+
+  
+
