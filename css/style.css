@@ -107,6 +107,7 @@ blockquote span {
   .logo {
     font-size: 38px;
     font-weight: 800;
+    text-align: center;
   }
   
   header {
@@ -308,6 +309,8 @@ blockquote span {
   
   .sidebar ul {
     margin-bottom: 40px;
+    list-style-type: none;
+    padding-left: 0px;
   }
   
   .sidebar ul li a {
