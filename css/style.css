@@ -22,8 +22,9 @@ html {
 }
 
 /******************************************
-/* BASE STYLES
+/* BASE STYLES /
 /*******************************************/
+
 
 body {
   color: #f0efef;
@@ -66,10 +67,12 @@ blockquote span {
 
 /* Center the container */
 
-.container {
+/* .container {
   width: 960px;
   margin: 0 auto;
-}
+} */
+
+
 
 /******************************************
 /* BUTTONS
@@ -106,6 +109,8 @@ blockquote span {
 }
 
 header {
+  display: flex;
+  width: 768px;
   background: #033048;
   padding: 25px 0;
   overflow: hidden;
@@ -118,6 +123,8 @@ header .container {
 }
 
 header .logo {
+  padding-left: 50px;
+  padding-right: 110px;
   color: #fff;
 }
 
@@ -202,16 +209,17 @@ nav a {
 
 .main .container {
   display: flex;
+  flex-direction: column;
 }
 
 .posts {
-  width: 700px;
+  width: 768px;
   margin-right: 20px;
   vertical-align: top;
 }
 
 .sidebar {
-  width: 240px;
+  width: 768px;
   vertical-align: top;
 }
 
@@ -233,10 +241,12 @@ nav a {
 }
 
 .post img {
+  margin-left: 35px;
   margin-bottom: 30px;
 }
 
 .post p {
+  margin: 40px;
   font-size: 24px;
   line-height: 1.333;
   color: #606161;
@@ -265,11 +275,13 @@ nav a {
 .sidebar h3 {
   font-size: 32px;
   font-weight: 800;
+  margin-left: 20px;
   margin-bottom: 15px;
   color: #043049;
 }
 
 .sidebar ul {
+  margin-left: 40px;
   margin-bottom: 40px;
 }
 
@@ -279,6 +291,7 @@ nav a {
 }
 
 .sidebar p {
+  margin: 40px;
   font-size: 22px;
   line-height: 1.1;
   margin-bottom: 40px;
@@ -294,8 +307,11 @@ nav a {
 /*******************************************/
 
 .bottom-cta {
+  width: 768px;
   background: #f9e42e;
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 5px;
   text-align: center;
 }
 
@@ -304,20 +320,23 @@ nav a {
 /*******************************************/
 
 footer {
+  width: 768px;
   background: #121212;
-  padding: 65px 0 45px;
+  padding: 20px;
   text-align: center;
 }
 
 footer .logo {
   color: #f9e42e;
   margin-bottom: 68px;
+  text-align: center;
 }
 
 footer p {
   font-size: 18px;
   color: #fff;
   font-weight: 600;
+  text-align: center;
 }
 
 .social {
@@ -331,4 +350,82 @@ footer p {
 .social > li {
   margin-left: 26px;
   margin-right: 26px;
+  text-align: center;
 }
+
+/* Desktop Style */
+
+@media (min-width: 1000px) {
+
+  body>* {
+    max-width: 1000px;
+    margin: auto;
+    background: #f0efef;
+  }
+
+/* HEADER */
+
+  header {
+    display: flex;
+    width: 1000px;
+    background: #033048;
+    padding: 25px 0;
+    overflow: hidden;
+  }  
+
+  header .logo {
+    padding-left: 80px;
+    padding-right: 300px;
+    color: #fff;
+  }
+  
+
+/* MAIN */
+
+  .main .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sidebar h3 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    color: #043049;
+  }
+
+  .sidebar ul {
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+
+  .sidebar p {
+    margin: 20px;
+    font-size: 22px;
+    line-height: 1.1;
+    margin-bottom: 40px;
+  }
+
+/* BOTTOM-CTA */
+
+  .bottom-cta {
+    width: 1000px;
+    background: #f9e42e;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 5px;
+    text-align: center;
+  }
+
+/* footer */
+
+  footer {
+    width: 1000px;
+    background: #121212;
+    padding: 20px;
+    text-align: center;
+  }
+
+}
+
