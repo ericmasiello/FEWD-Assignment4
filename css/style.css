@@ -25,6 +25,9 @@ html {
 /* BASE STYLES
 /*******************************************/
 
+@media (min-width: 1000px) {
+
+
 body {
   color: #f0efef;
   font-size: 26px;
@@ -202,17 +205,19 @@ nav a {
 
 .main .container {
   display: flex;
+  flex-direction: row;
 }
 
 .posts {
-  width: 700px;
+  width: 700px; 
   margin-right: 20px;
   vertical-align: top;
 }
 
 .sidebar {
-  width: 240px;
+  width: 240px; 
   vertical-align: top;
+  margin-left: 50px;
 }
 
 .post {
@@ -234,6 +239,7 @@ nav a {
 
 .post img {
   margin-bottom: 30px;
+  width: 560px;
 }
 
 .post p {
@@ -331,4 +337,187 @@ footer p {
 .social > li {
   margin-left: 26px;
   margin-right: 26px;
+}
+
+}
+
+
+/*Tablet Styles */
+/* single column in blog when appropriate */
+
+@media (min-width: 768px) {
+
+body {
+  font-size: 20px;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+blockquote {
+  font-size: 30px;
+  width: 436px;
+}
+
+.container {
+  width: 720px;
+}
+
+.button {
+  padding: 10px 0;
+  min-width: 210px;
+  font-size: 20px;
+}
+
+.secondary {
+  font-size: 18px;
+}
+
+.logo {
+  font-size: 36px;
+}
+
+header {
+  padding: 20px 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 40px;
+  font-size: 24px;
+}
+
+nav li:first-child {
+  margin-left: 0;
+}
+
+.hero {
+  min-height: 520px;
+  padding-top: 24px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin: 90px 0 68px;
+}
+
+.benefits {
+  padding: 75px 0 60px;
+}
+
+.benefits p,
+.benefits ul {
+  width: 450px;
+}
+
+.benefits ul {
+  margin: 24px 0 0 60px;
+}
+
+.testimonial {
+  padding: 54px 0 54px;
+}
+
+.main {
+  margin-top: 60px;
+}
+
+.posts {
+  width: 520px;
+  margin-right: 16px;
+}
+
+.sidebar {
+  width: 180px;
+}
+
+.post {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.post h2 {
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+.post img {
+  margin-bottom: 24px;
+}
+
+.post p {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.post p:first-of-type:first-letter {
+  font-size: 60px;
+  line-height: 50px;
+  padding-top: 4px;
+  padding-right: 6px;
+  padding-left: 2px;
+}
+
+.readmore {
+  margin-top: 24px;
+}
+
+.sidebar h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.sidebar ul {
+  margin-bottom: 30px;
+}
+
+.sidebar ul li a {
+  font-size: 18px;
+}
+
+.sidebar p {
+  font-size: 16px;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.bottom-cta {
+  padding: 24px;
+}
+
+footer {
+  padding: 50px 0 34px;
+}
+
+footer .logo {
+  margin-bottom: 50px;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+.social {
+  margin: 0;
+  margin-bottom: 56px;
+}
+
+.social > li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.main .container {
+  display: flex;
+  flex-direction: column; /*It turns into a single column tablet size, but why is it still a single column desktop size?*/ 
+}
+
 }
