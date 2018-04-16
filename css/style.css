@@ -69,9 +69,7 @@ blockquote span {
 .container {
   max-width: 950px;
   margin: 20px auto;
-
 }
-
 
 /******************************************
 /* BUTTONS
@@ -198,8 +196,6 @@ nav a {
 /* MAIN
 /*******************************************/
 
-
-
 .main {
   margin-top: 80px;
 }
@@ -207,7 +203,6 @@ nav a {
 .main .container {
   display: flex;
 }
-
 
 .posts {
   width: 700px;
@@ -333,34 +328,30 @@ footer p {
   list-style-type: none;
 }
 
-.social > li {
+.social>li {
   margin-left: 26px;
   margin-right: 26px;
 }
 
 /* Tablet Style */
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   body {
     text-align: center;
   }
-  
   header .container {
     display: block;
     text-align: left;
     padding-left: 20px;
   }
-
-
-  .sidebar, .posts{
+  .sidebar,
+  .posts {
     width: 50%;
   }
-
-  .posts img{
+  .posts img {
     width: 95%;
     height: auto;
   }
-
   .benefits .container {
     text-align: center;
     width: 100%;
@@ -368,36 +359,84 @@ footer p {
   .benefits p {
     width: 100%;
   }
-
-  .benefits ul{
+  .benefits ul {
     text-align: center;
     overflow-x: auto;
     margin: 0;
     width: 100%;
-    
+  }
+  .logo {
+    font-size: 30px;
+  }
+  section.main {
+    margin-top: 0;
+  }
+  .posts h2 {
+    font-size: 30px;
+  }
+  .post p {
+    font-size: 20px;
+  }
+  .post p:first-of-type:first-letter {
+    font-size: 55px;
+    line-height: 65px;
+    padding: 2px;
+  }
+  .hero h2 {
+    font-size: 35px;
+  }
+  .button {
+    min-width: 200px;
+  }
+  .benefits {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .benefits h3 {
+    font-size: 30px;
+  }
+  .benefits p,
+  .benefits ul li {
+    font-size: 18px;
+  }
+  .testimonial {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  blockquote {
+    font-size: 20px;
+    width: 80%
+  }
+  footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
 /* Mobile Style */
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
   nav ul {
     display: flex;
     margin: 0;
     padding: 0;
     width: 100%;
   }
-  
-  .main .container{
+  nav ul li {
+    font-size: 18px;
+  }
+  .main .container {
     display: block;
   }
-
-  .sidebar ul li{
+  .sidebar ul li {
     max-width: 300px;
   }
-
-  .sidebar, .posts{
+  .sidebar,
+  .posts {
     width: 100%;
     height: auto;
+  }
+  footer p {
+    font-size: 10px;
   }
 }
