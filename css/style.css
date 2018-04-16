@@ -439,4 +439,11 @@ footer p {
   footer p {
     font-size: 10px;
   }
+
+  header{
+    width: 100%;
+  }
+  .container nav{
+    width: 100%;
+  }
 }
