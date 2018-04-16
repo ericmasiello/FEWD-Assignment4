@@ -1,8 +1,8 @@
 /*
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
-Developer @GA in NYC
+Project Name: Relaxr Responsive Design
+Client: Relaxr  
+Author: Matt Megill
+Developer @GA in DC
 */
 
 /******************************************
@@ -67,9 +67,11 @@ blockquote span {
 /* Center the container */
 
 .container {
-  width: 960px;
-  margin: 0 auto;
+  max-width: 950px;
+  margin: 20px auto;
+
 }
+
 
 /******************************************
 /* BUTTONS
@@ -196,6 +198,8 @@ nav a {
 /* MAIN
 /*******************************************/
 
+
+
 .main {
   margin-top: 80px;
 }
@@ -203,6 +207,7 @@ nav a {
 .main .container {
   display: flex;
 }
+
 
 .posts {
   width: 700px;
@@ -331,4 +336,68 @@ footer p {
 .social > li {
   margin-left: 26px;
   margin-right: 26px;
+}
+
+/* Tablet Style */
+
+@media (max-width: 768px){
+  body {
+    text-align: center;
+  }
+  
+  header .container {
+    display: block;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+
+  .sidebar, .posts{
+    width: 50%;
+  }
+
+  .posts img{
+    width: 95%;
+    height: auto;
+  }
+
+  .benefits .container {
+    text-align: center;
+    width: 100%;
+  }
+  .benefits p {
+    width: 100%;
+  }
+
+  .benefits ul{
+    text-align: center;
+    overflow-x: auto;
+    margin: 0;
+    width: 100%;
+    
+  }
+}
+
+/* Mobile Style */
+
+@media (max-width: 480px){
+  nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .main .container{
+    display: block;
+  }
+
+  .sidebar ul li{
+    max-width: 300px;
+  }
+
+  .sidebar, .posts{
+    width: 100%;
+    height: auto;
+  }
 }
