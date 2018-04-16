@@ -115,16 +115,13 @@ header .container {
   /* display: flex; */
   align-items: baseline;
   justify-content: space-between;
-
 }
 
-
-@media (min-width:768px){
-  header .container{
-    display:flex;
+@media (min-width:768px) {
+  header .container {
+    display: flex;
   }
 }
-
 
 header .logo {
   color: #fff;
@@ -139,18 +136,21 @@ nav ul {
   margin: 0;
   padding: 0;
 }
+
 @media (min-width:768px) {
   nav ul {
-    display:flex;
+    display: flex;
   }
 }
+
 nav li {
   /* margin-left: 40px; */
   font-size: 24px;
 }
-@media (min-width:768px){
-  nav li{
-    margin-left:40px;
+
+@media (min-width:768px) {
+  nav li {
+    margin-left: 40px;
   }
 }
 
@@ -221,13 +221,13 @@ nav a {
 .main .container {
   /* display: flex; */
 }
-@media (min-width:768px){
-  .main .container{
-    display:flex;
+
+@media (min-width:768px) {
+  .main .container {
+    display: flex;
   }
-
-
 }
+
 .posts {
   max-width: 700px;
   margin-right: 20px;
@@ -357,11 +357,9 @@ footer p {
   margin-right: 26px;
 }
 
-img{
-  max-width:100%;
-  height:auto;
-  
-
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* /*****Tablet style ******* */
