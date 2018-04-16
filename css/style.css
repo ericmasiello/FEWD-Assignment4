@@ -50,7 +50,7 @@ blockquote {
   font-weight: 300;
   font-style: italic;
   text-align: center;
-  width: 580px;
+  max-width: 580px;
   margin: 0 auto;
 }
 
@@ -67,7 +67,7 @@ blockquote span {
 /* Center the container */
 
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -112,10 +112,19 @@ header {
 }
 
 header .container {
-  display: flex;
+  /* display: flex; */
   align-items: baseline;
   justify-content: space-between;
+
 }
+
+
+@media (min-width:768px){
+  header .container{
+    display:flex;
+  }
+}
+
 
 header .logo {
   color: #fff;
@@ -126,14 +135,23 @@ header .logo {
 /*******************************************/
 
 nav ul {
-  display: flex;
+  /* display: flex; */
   margin: 0;
   padding: 0;
 }
-
+@media (min-width:768px) {
+  nav ul {
+    display:flex;
+  }
+}
 nav li {
-  margin-left: 40px;
+  /* margin-left: 40px; */
   font-size: 24px;
+}
+@media (min-width:768px){
+  nav li{
+    margin-left:40px;
+  }
 }
 
 nav li:first-child {
@@ -173,7 +191,7 @@ nav a {
 
 .benefits p,
 .benefits ul {
-  width: 600px;
+  max-width: 600px;
 }
 
 .benefits ul {
@@ -201,11 +219,17 @@ nav a {
 }
 
 .main .container {
-  display: flex;
+  /* display: flex; */
 }
+@media (min-width:768px){
+  .main .container{
+    display:flex;
+  }
 
+
+}
 .posts {
-  width: 700px;
+  max-width: 700px;
   margin-right: 20px;
   vertical-align: top;
 }
@@ -328,7 +352,32 @@ footer p {
   list-style-type: none;
 }
 
-.social > li {
+.social>li {
   margin-left: 26px;
   margin-right: 26px;
 }
+
+img{
+  max-width:100%;
+  height:auto;
+  
+
+}
+
+/* /*****Tablet style ******* */
+
+/* @media (min-width:768px) {
+  section {
+    margin: auto;
+    width: 40%;
+    font-size: 1.5rem;
+  }
+  p {
+    width: 40%;
+    margin: auto;
+    font-size: 1.25rem;
+  }
+  img {
+    width: 100%;
+  }
+} */
