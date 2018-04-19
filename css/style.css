@@ -50,7 +50,7 @@ blockquote {
   font-weight: 300;
   font-style: italic;
   text-align: center;
-  width: 580px;
+  max-width: 580px;
   margin: 0 auto;
 }
 
@@ -60,6 +60,11 @@ blockquote span {
   font-style: normal;
 }
 
+img {
+  max-width: 100%;
+  height: auto
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -67,7 +72,7 @@ blockquote span {
 /* Center the container */
 
 .container {
-  width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -107,14 +112,16 @@ blockquote span {
 
 header {
   background: #033048;
-  padding: 25px 0;
-  overflow: hidden;
+  padding: 25px;
+  text-align: center;
 }
 
-header .container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+@media(min-width: 768px) {
+  header .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 header .logo {
@@ -126,14 +133,24 @@ header .logo {
 /*******************************************/
 
 nav ul {
-  display: flex;
   margin: 0;
   padding: 0;
 }
 
+@media(min-width: 768px) {
+  nav ul {
+    display: flex;
+  }
+}
+
 nav li {
-  margin-left: 40px;
   font-size: 24px;
+}
+
+@media(min-width: 768px) {
+  nav li {
+    margin-left: 40px;
+  }
 }
 
 nav li:first-child {
@@ -168,12 +185,13 @@ nav a {
 /*******************************************/
 
 .benefits {
-  padding: 100px 0 80px;
+  padding: 100px 25px 80px;
+  ;
 }
 
 .benefits p,
 .benefits ul {
-  width: 600px;
+  max-width: 600px;
 }
 
 .benefits ul {
@@ -188,7 +206,7 @@ nav a {
 .testimonial {
   background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
   background-size: cover;
-  padding: 70px 0 70px;
+  padding: 70px 25px;
   color: #fff;
 }
 
@@ -198,21 +216,34 @@ nav a {
 
 .main {
   margin-top: 80px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
-.main .container {
-  display: flex;
+@media(min-width: 768px) {
+  .main .container {
+    display: flex;
+  }
 }
 
 .posts {
-  width: 700px;
-  margin-right: 20px;
   vertical-align: top;
 }
 
+@media(min-width: 768px) {
+  .posts {
+    padding-right: 20px;
+  }
+}
+
 .sidebar {
-  width: 240px;
   vertical-align: top;
+}
+
+@media(min-width: 768px) {
+  .sidebar {
+    min-width: 240px;
+  }
 }
 
 .post {
@@ -328,7 +359,16 @@ footer p {
   list-style-type: none;
 }
 
-.social > li {
+.social>li {
   margin-left: 26px;
   margin-right: 26px;
+}
+
+.media {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.media>* {
+  flex: 1 1 250px;
 }
