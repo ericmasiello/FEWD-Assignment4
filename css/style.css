@@ -60,7 +60,7 @@ blockquote span {
   font-style: normal;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto
 }
@@ -118,10 +118,11 @@ header {
 
 @media(min-width: 768px) {
   header .container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-    }
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
 
 header .logo {
   color: #fff;
@@ -138,20 +139,19 @@ nav ul {
 
 @media(min-width: 768px) {
   nav ul {
-  display: flex;
-   }
+    display: flex;
   }
+}
 
 nav li {
-  
   font-size: 24px;
 }
 
 @media(min-width: 768px) {
-   nav li {
-   margin-left: 40px;
-   }
+  nav li {
+    margin-left: 40px;
   }
+}
 
 nav li:first-child {
   margin-left: 0;
@@ -185,7 +185,8 @@ nav a {
 /*******************************************/
 
 .benefits {
-  padding: 100px 25px 80px;;
+  padding: 100px 25px 80px;
+  ;
 }
 
 .benefits p,
@@ -214,37 +215,36 @@ nav a {
 /*******************************************/
 
 .main {
- margin-top: 80px;
- padding-left: 25px;
- padding-right: 25px;
+  margin-top: 80px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 @media(min-width: 768px) {
   .main .container {
-  display: flex;
-   }
+    display: flex;
   }
+}
 
 .posts {
-  
   vertical-align: top;
 }
+
 @media(min-width: 768px) {
   .posts {
-  padding-right: 20px;
-   }
+    padding-right: 20px;
   }
+}
 
 .sidebar {
-  
   vertical-align: top;
 }
 
 @media(min-width: 768px) {
   .sidebar {
-  min-width: 240px;
-   }
+    min-width: 240px;
   }
+}
 
 .post {
   border-bottom: 1px solid #043049;
@@ -359,21 +359,16 @@ footer p {
   list-style-type: none;
 }
 
-.social > li {
+.social>li {
   margin-left: 26px;
   margin-right: 26px;
 }
+
 .media {
   display: flex;
   flex-wrap: wrap;
 }
 
-.media > * {
+.media>* {
   flex: 1 1 250px;
-}
-
-@media (min-height: 600px) {
-  section {
-    column-width: 15em;
-  }
 }
